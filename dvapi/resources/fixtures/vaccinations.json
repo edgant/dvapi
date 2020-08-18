@@ -1,0 +1,12 @@
+[
+    {
+        "model": "resources.vaccination",
+        "pk": 1,
+        "fields": {
+            "rut": 253601639,
+            "dose": "1.00",
+            "date": "2020-08-18",
+            "drug": 5
+        }
+    }
+]

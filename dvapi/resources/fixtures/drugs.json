@@ -1,0 +1,65 @@
+[
+    {
+        "model": "resources.drug",
+        "pk": 1,
+        "fields": {
+            "name": "Ad5",
+            "code": "Ad5",
+            "description": "The Chinese company CanSino Biologics developed a vaccine based on an adenovirus called Ad5, in partnership with the Institute of Biology at the country’s Academy of Military Medical Sciences."
+        }
+    },
+    {
+        "model": "resources.drug",
+        "pk": 2,
+        "fields": {
+            "name": "Gam-Covid-Vac Lyo",
+            "code": "Gam-Covid",
+            "description": "The Gamaleya Research Institute, part of Russia’s Ministry of Health, launched a Phase 1 trial in June of a vaccine they called Gam-Covid-Vac Lyo."
+        }
+    },
+    {
+        "model": "resources.drug",
+        "pk": 3,
+        "fields": {
+            "name": "BioNTech",
+            "code": "BioNTech",
+            "description": "The German company BioNTech entered into collaborations with Pfizer, based in New York, and the Chinese drug maker Fosun Pharma to develop an mRNA vaccine. In May they launched a Phase 1/2 trial."
+        }
+    },
+    {
+        "model": "resources.drug",
+        "pk": 4,
+        "fields": {
+            "name": "Moderna",
+            "code": "Moderna",
+            "description": "Moderna develops vaccines based on messenger RNA (mRNA) to produce viral proteins in the body. They have yet to bring one to the market. The government has bankrolled Moderna’s efforts on a coronavirus vaccine with nearly $1 billion."
+        }
+    },
+    {
+        "model": "resources.drug",
+        "pk": 5,
+        "fields": {
+            "name": "AstraZeneca",
+            "code": "AstraZenec",
+            "description": "A vaccine in development by the British-Swedish company AstraZeneca and the University of Oxford is based on a chimpanzee adenovirus called ChAdOx1."
+        }
+    },
+    {
+        "model": "resources.drug",
+        "pk": 6,
+        "fields": {
+            "name": "Sinopharm",
+            "code": "Sinopharm",
+            "description": "The Wuhan Institute of Biological Products developed an inactivated virus vaccine, which the state-owned Chinese company Sinopharm put into clinical tests"
+        }
+    },
+    {
+        "model": "resources.drug",
+        "pk": 8,
+        "fields": {
+            "name": "Novartis",
+            "code": "Novartis",
+            "description": "The Swiss company Novartis will manufacture a vaccine based on a gene therapy treatment developed by the Massachusetts Eye and Ear Hospital."
+        }
+    }
+]
