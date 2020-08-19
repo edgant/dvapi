@@ -4,16 +4,13 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-      - cd dvapi
-      - echo Activating virtual environment.
-      - source venv/bin/activate
-      - cd dvapi
       - echo Installing project dependencies.
       - pip install -r requirements.txt
 
   build:
     commands:
       - echo Entered the build phase...
+      - cd dvapi
       - echo Applying database migrations
       - python manage.py migrate --no-input
       - echo Collecting project's static files
