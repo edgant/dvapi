@@ -1,2 +1,2 @@
 #!/bin/bash
-systemctl gunicorn stop
+systemctl stop gunicorn
