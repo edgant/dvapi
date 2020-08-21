@@ -13,7 +13,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.6, 3.7, 3.8]
+        python-version: [3.7]
 
     steps:
     - uses: actions/checkout@v2
@@ -22,7 +22,11 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-east-1b
+        aws-region: us-east-1
+    - name: Run CodeBuild
+      uses: aws-actions/aws-codebuild-run-project@v1
+      with:
+        project-name: CodeBuildProjectName
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
