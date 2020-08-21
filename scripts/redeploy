@@ -1,0 +1,14 @@
+#!/bin/bash
+
+sudo git pull
+
+. venv/bin/activate
+
+pip install -r requirements.txt
+
+cd dvapi
+
+python manage.py migrate --no-input
+python manage.py collectstatic --no-input
+
+sudo systemctl reload gunicorn
