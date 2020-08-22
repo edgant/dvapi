@@ -15,14 +15,18 @@ class Drug(models.Model):
 
 
 def validate_rut(value):
-    """Simple RUT validator using django-localflavor CLRutField's `clean()` method """
+    """
+    Simple RUT validator using django-localflavor CLRutField's `clean()` method
+    As oposed to FormField clean() methods's purpose. Validators should only Raise
+    an Exception if validation criteria isn't met.
+    """
     rut = CLRutField()
     rut.clean(value)
 
 
 class Vaccination(models.Model):
     """Vaccination resource. Indicates used drug."""
-    rut = models.IntegerField(validators=[validate_rut])
+    rut = models.CharField(max_length=12, validators=[validate_rut])
     dose = models.DecimalField(max_digits=3,
                                decimal_places=2,
                                validators=[
