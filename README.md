@@ -9,7 +9,7 @@ Made with:
 * MySQL
 
 Currently deployed on:
-* [Amazon EC2 (free tier)](http://ec2-3-89-187-158.compute-1.amazonaws.com/)
+* [Amazon EC2 (free tier)](http://ec2-54-89-209-105.compute-1.amazonaws.com/)
 
 Served trough:
 * nginx
